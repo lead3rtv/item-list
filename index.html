@@ -100,10 +100,10 @@
 								</div>
 								<p>
 									<button type="button" class="btn btn-primary sort" data-sort="abr">
-																				Sort by Name
+										Sort by Name
 									</button>
 									<button type="button" class="btn btn-primary sort" data-sort="price">
-																				Sort by Price
+										Sort by Price
 									</button>
 								</p>
 								<table class="table items">
@@ -253,7 +253,7 @@
 			$.getJSON(itemListURL, function(data) {
 				var options = {
 					valueNames: ['abr', 'price', 'category'],
-					item: '<tr><td class="abr" scope="row"/><td class="price"/><td class="category"/></tr>'
+					item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="category"></td></tr>'
 				};
 
 				var itemData = [];
@@ -270,7 +270,7 @@
 			$.getJSON(eventListURL, function(data) {
 				var options = {
 					valueNames: ['abr', 'price', 'karmatype'],
-					item: '<tr><td class="abr" scope="row"/><td class="price"/><td class="karmatype"/></tr>'
+					item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="karmatype"></td></tr>'
 				};
 
 				var eventData = [];
@@ -287,7 +287,7 @@
 			$.getJSON(traitListURL, function(data) {
 				var options = {
 					valueNames: ['abr', 'price', 'mod', 'effect'],
-					item: '<tr><td class="abr" scope="row"/><td class="price"/><td class="mod"/><td class="effect"/></tr>'
+					item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="mod"></td><td class="effect"></td></tr>'
 				};
 
 				var traitData = [];
