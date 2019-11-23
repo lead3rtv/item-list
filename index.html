@@ -162,6 +162,9 @@
                                 <button type="button" class="btn btn-primary sort" data-sort="abr">
                                     Sort by Name
                                 </button>
+								<button type="button" class="btn btn-primary sort" data-sort="mod">
+									Sort by Mod
+								</button>
                                 <button type="button" class="btn btn-primary sort" data-sort="effect">
                                     Sort by Effects
                                 </button>
@@ -170,7 +173,8 @@
                                 <tr>
                                     <th scope="col" class="sort" data-sort="abr">Name</th>
                                     <th scope="col" class="sort" data-sort="price">Price</th>
-                                    <th scope="col" class="sort" data-sort="karmatype">Effects</th>
+									<th scope="col" class="sort" data-sort="mod">Mod</th>
+                                    <th scope="col" class="sort" data-sort="effect">Effects</th>
                                 </tr>
                                 <tbody class="list">
                                 </tbody>
@@ -282,7 +286,7 @@
 		$.getJSON(traitListURL, function(data) {
 			var options = {
 				valueNames: ['abr', 'price', 'effect'],
-				item: '<tr><td class="abr" scope="row"></td><td class="effect"></td>'
+				item: '<tr><td class="abr" scope="row"></td><td> class="price"</td></td><td class="mod"></td><td class="effect"></tr>'
 			};
 			
 			var traitData = [];
