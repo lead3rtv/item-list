@@ -247,17 +247,13 @@
             top: -4px;
             right: -5px;
         }
-											</style>
-											<script type="text/javascript">
+	</style>
+	<script type="text/javascript">
         let itemList = null;
         $.getJSON(itemListURL, function(data) {
             var options = {
                 valueNames: ['abr', 'price', 'category'],
-                item: '<tr>
-													<td class="abr" scope="row"/>
-													<td class="price"/>
-													<td class="category"/>
-												</tr>'
+                item: '<tr><td class="abr" scope="row"/><td class="price"/><td class="category"/></tr>'
             };
 
             var itemData = [];
@@ -274,11 +270,7 @@
         $.getJSON(eventListURL, function(data) {
             var options = {
                 valueNames: ['abr', 'price', 'karmatype'],
-                item: '<tr>
-												<td class="abr" scope="row"/>
-												<td class="price"/>
-												<td class="karmatype"/>
-											</tr>'
+                item: '<tr><td class="abr" scope="row"/><td class="price"/><td class="karmatype"/></tr>'
             };
 
             var eventData = [];
@@ -295,7 +287,7 @@
 		$.getJSON(traitListURL, function(data) {
 			var options = {
 				valueNames: ['abr', 'price', 'mod', 'effect'],
-				item: '<tr><td class="abr" scope="row"/></td><td class="price"</td><td class="mod"/><td class="effect"></tr>'
+				item: '<tr><td class="abr" scope="row"/><td class="price"/><td class="mod"/><td class="effect"/></tr>'
 			};
 
 			var traitData = [];
